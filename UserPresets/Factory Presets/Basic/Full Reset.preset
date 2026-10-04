@@ -11,7 +11,7 @@
     <Control type="ScriptSlider" id="Reverb Mix" value="0.0"/>
     <Control type="ScriptSlider" id="Reverb Time" value="0.75"/>
     <Control type="ScriptSlider" id="Fliter Freq" value="20000.0"/>
-    <Control type="ScriptSlider" id="Filter Res" value="1.100000023841858"/>
+    <Control type="ScriptSlider" id="Filter Res" value="1.0"/>
     <Control type="ScriptSlider" id="Phaser Depth" value="0.0"/>
     <Control type="ScriptSlider" id="Phaser Rate" value="0.0"/>
     <Control type="ScriptButton" id="linkKsamplers" value="0.0"/>
