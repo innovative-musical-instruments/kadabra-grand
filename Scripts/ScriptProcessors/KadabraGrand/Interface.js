@@ -197,7 +197,7 @@ const var Delay1          = Synth.getEffect("Delay1");
 // Hidden knobs that persist per-mode delay values across DAW sessions and preset recall.
 // These must exist in the HISE UI editor as hidden sliders:
 //   delayFreeMemory  — min:1,    max:2500, default:400
-//   delaySyncMemory  — min:0,    max:18,   default:8
+//   delaySyncMemory  — min:0,    max:18,   default:7
 const var delayFreeMemory = Content.getComponent("delayFreeMemory");
 const var delaySyncMemory = Content.getComponent("delaySyncMemory");
 
@@ -246,7 +246,7 @@ inline function onDelaySyncModeControl(component, value)
         DelayTimeKnob.set("max", 18);
         DelayTimeKnob.set("middlePosition", 9);
         DelayTimeKnob.set("stepSize", 1);
-        DelayTimeKnob.set("defaultValue", 8);
+        DelayTimeKnob.set("defaultValue", 7);
         DelayTimeKnob.setValue(delaySyncMemory.getValue()); // restore from hidden knob
 
         var audioValue = delaySyncMemory.getValue() + SYNC_OFFSET;
@@ -277,7 +277,7 @@ if (DelaySyncMode.getValue() == 1) // Sync mode
     DelayTimeKnob.set("max", 18);
     DelayTimeKnob.set("middlePosition", 9);
     DelayTimeKnob.set("stepSize", 1);
-    DelayTimeKnob.set("defaultValue", 8);
+    DelayTimeKnob.set("defaultValue", 7);
     DelayTimeKnob.setValue(delaySyncMemory.getValue());
 
     var initAudio = delaySyncMemory.getValue() + SYNC_OFFSET;
